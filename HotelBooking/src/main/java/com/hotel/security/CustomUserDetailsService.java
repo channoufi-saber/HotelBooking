@@ -3,11 +3,16 @@ package com.hotel.security;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 import com.hotel.entities.User;
 import com.hotel.exceptions.NotFoundException;
 import com.hotel.repositories.UserRepository;
 
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
 public class CustomUserDetailsService implements UserDetailsService {
 	
 	private final UserRepository userRepository = null;
