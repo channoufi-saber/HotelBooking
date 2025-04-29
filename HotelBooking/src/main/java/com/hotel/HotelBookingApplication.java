@@ -21,6 +21,7 @@ public class HotelBookingApplication {
 		SpringApplication.run(HotelBookingApplication.class, args);
 	}
 	
+	/*
 	@PostConstruct
 	public void sendDummyEmail() {
 		NotificationDTO notificationDTO=NotificationDTO.builder()
@@ -28,5 +29,6 @@ public class HotelBookingApplication {
 				
 				notificationService.sendEmail(notificationDTO);
 	}
+	*/
 
 }
