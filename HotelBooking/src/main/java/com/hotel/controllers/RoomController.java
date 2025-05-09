@@ -64,7 +64,7 @@ public class RoomController {
 }
 
 	@GetMapping("/all")
-	public ResponseEntity<Response> fetAllRooms() {
+	public ResponseEntity<Response> getAllRooms() {
 		return ResponseEntity.ok(roomService.getAllRooms());
 	}
 	
