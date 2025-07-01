@@ -1,0 +1,14 @@
+<div>
+  <h2>Register</h2>
+  <p *ngIf="error" class="error">{{error}} </p>
+  <form (ngSubmit)="handleSubmit()">
+    <input type="text" name="firstName" placeholder="firstName" [(ngModel)]="formData.firstName" required >
+    <input type="text" name="lastName" placeholder="lastName" [(ngModel)]="formData.lastName" required >
+    <input type="email" name="email" placeholder="email" [(ngModel)]="formData.email" required >
+    <input type="password" name="password" placeholder="password" [(ngModel)]="formData.password" required >
+    <input type="tel" name="phoneNumber" placeholder="phoneNumber" [(ngModel)]="formData.phoneNumber" required >
+
+    <button type="submit">Register</button>
+  </form>
+  <p>Already have an account? <a routerLink="/login">Login</a></p>
+</div>
